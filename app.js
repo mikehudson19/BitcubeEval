@@ -6,15 +6,20 @@ require('dotenv').config();
 const bcrypt = require('bcrypt');
 const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
+const RememberMeStrategy = require('passport-remember-me').Strategy;
 const session = require('express-session');
 const flash = require('express-flash');
 const methodOverride = require('method-override');
+var cookieParser = require('cookie-parser');
 
 const app = express();
 
-const initializePassport = require('./config/passport');
+const passportModule = require('./config/passport');
+const initializePassport = passportModule.initialize;
+const rememberMe = passportModule.rememberMe;
 
 initializePassport(passport);
+rememberMe(passport);
 
 app.use(bodyParser.urlencoded({ extended : true }))
 app.use(express.urlencoded({ extended: false }));
@@ -36,8 +41,10 @@ app.use(express.static("public"));
 
 
 // Passport middleware
+app.use(cookieParser());
 app.use(passport.initialize());
 app.use(passport.session());
+app.use(passport.authenticate('remember-me'));
 
 app.use(methodOverride('_method'));
 
@@ -114,7 +121,22 @@ app.post('/login', checkNotAuthenticated, passport.authenticate('local', {
   successRedirect: '/access',
   failureRedirect: '/login',
   failureFlash: true
-}))
+}),  
+
+function(req, res, next) {
+  // issue a remember me cookie if the option was checked
+  if (!req.body.remember_me) { return next(); }
+
+  var token = utils.generateToken(64);
+  Token.save(token, { userId: req.user.id }, function(err) {
+    if (err) { return done(err); }
+    res.cookie('remember_me', token, { path: '/', httpOnly: true, maxAge: 604800000 }); // 7 days
+    return next();
+  });
+},
+function(req, res) {
+  res.redirect('/');
+});
 
 app.delete('/logout', (req, res) => {
   req.logOut();
