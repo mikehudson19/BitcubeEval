@@ -1,0 +1,27 @@
+<div class="login">
+  <div class="login__container">
+    <h1 class="login__heading">Login here</h1>
+    <div class="login__message">
+    <% if (messages.error) { %> <%= messages.error %> <% } %>
+  </div>
+    <form class="login__form" action="/login" method="POST">
+      <input
+        class="login__input"
+        type="email"
+        name="email"
+        placeholder="Email"
+      />
+      <input
+        class="login__input"
+        type="password"
+        name="password"
+        placeholder="Password"
+      />
+      <button class="login__btn" type="submit">Login</button>
+    </form>
+  </div>
+  <p class="login__text">
+    Don't have an account yet?
+    <a class="login__link" href="/register">Register</a> for one here.
+  </p>
+</div>

@@ -1,0 +1,340 @@
+body {
+  background: #111111;
+  color: white;
+  font-family: 'News Cycle', sans-serif;
+  letter-spacing: 1.1px;
+}
+
+.home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 90vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.home__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.home__text {
+  font-size: 1.5rem;
+}
+
+.home__link {
+  text-decoration: none;
+  color: black;
+  padding: 1rem;
+  background: white;
+  margin: 0 0.5rem;
+  width: 6rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.home__link:hover {
+  background: #017201;
+  color: white;
+}
+
+.register {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 90vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.register__message {
+  margin: 1rem 0;
+}
+
+.register__container {
+  background: rgba(80, 80, 80, 0.596);
+  padding: 2.5rem 3rem;
+  width: 25%;
+}
+
+.register__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.register__input {
+  margin-bottom: 0.9rem;
+  border: none;
+  padding: 0.4rem;
+  width: 60%;
+}
+
+.register__btn {
+  padding: 0.75rem 0.3rem;
+  background: white;
+  border: none;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  letter-spacing: 1.3px;
+  width: 70%;
+}
+
+.register__btn:hover {
+  background: #017201;
+  color: white;
+  cursor: pointer;
+  border: 0.5px white solid;
+}
+
+.register__text {
+  margin-top: 2.5rem;
+  font-size: 1.2rem;
+}
+
+.register__link {
+  color: #009700;
+}
+
+.login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 90vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.login__message {
+  margin: 1rem 0;
+}
+
+.login__container {
+  background: rgba(80, 80, 80, 0.596);
+  padding: 2.5rem 3rem;
+  width: 25%;
+}
+
+.login__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login__input {
+  margin-bottom: 0.9rem;
+  border: none;
+  padding: 0.4rem;
+  width: 60%;
+}
+
+.login__btn {
+  padding: 0.75rem 0.3rem;
+  background: white;
+  border: none;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  letter-spacing: 1.3px;
+  width: 70%;
+}
+
+.login__btn:hover {
+  background: #017201;
+  color: white;
+  cursor: pointer;
+  border: 0.5px white solid;
+}
+
+.login__text {
+  margin-top: 2.5rem;
+  font-size: 1.2rem;
+}
+
+.login__link {
+  color: #009700;
+}
+
+.access {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 90vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.access__group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.access__link {
+  background: white;
+  color: black;
+  padding: 1rem;
+  text-decoration: none;
+  width: 15rem;
+  text-align: center;
+}
+
+.access__link:hover {
+  background: #017201;
+  color: white;
+}
+
+.access__btn {
+  padding: 0.95rem 2.05rem;
+  background: white;
+  border: none;
+  font-family: 'News Cycle', sans-serif;
+  margin-top: 1rem;
+  font-size: 1rem;
+  width: 17.2rem;
+}
+
+.access__btn:hover {
+  background: #017201;
+  color: white;
+  cursor: pointer;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__text {
+  font-size: 0.7rem;
+}
+
+@media (max-width: 430px) {
+  .home__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .home__link {
+    margin-top: 1rem;
+  }
+  .register__input {
+    width: 95%;
+  }
+  .register__btn {
+    width: 100%;
+  }
+  .login__input {
+    width: 95%;
+  }
+  .login__btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .register__input {
+    width: 90%;
+  }
+  .register__btn {
+    width: 95%;
+  }
+  .login__input {
+    width: 90%;
+  }
+  .login__btn {
+    width: 95%;
+  }
+}
+
+@media (max-width: 760px) {
+  .register__container {
+    width: 45%;
+  }
+  .login__container {
+    width: 45%;
+  }
+}
+
+@media (max-width: 600px) {
+  .access__btn {
+    width: 14rem;
+  }
+  .access__link {
+    width: 12.5rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

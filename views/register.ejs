@@ -1,0 +1,63 @@
+<div class="register">
+  <div class="register__container">
+  <h1 class="register__heading">Register here</h1>
+<div class="register__message">
+  <% if (messages.length == 1) { %> <% messages.forEach((message) => { %>
+  <p><%= message %></p>
+
+  <% })} %>
+</div>
+
+  <form class="register__form" action="/register" method="POST">
+    <input
+      class="register__input"
+      type="name"
+      name="firstName"
+      id="name"
+      placeholder="First Name"
+      autofocus
+      required
+      autocomplete="off"
+    />
+    <input
+      class="register__input"
+      type="name"
+      name="lastName"
+      id="lastName"
+      placeholder="Last Name"
+      required
+      autocomplete="off"
+    />
+    <input
+      class="register__input"
+      type="email"
+      name="email"
+      placeholder="Email"
+      required
+      autocomplete="off"
+    />
+    <input
+      class="register__input"
+      type="password"
+      name="password"
+      placeholder="Password"
+      required
+      autocomplete="off"
+    />
+    <input
+      class="register__input"
+      type="password"
+      name="password2"
+      placeholder="Confirm Password"
+      required
+      autocomplete="off"
+    />
+    <button class="register__btn" type="submit">Register</button>
+  </form>
+</div>
+
+  <p class="register__text">
+    Already registered?
+    <a href="/login" class="register__link">Login here</a> instead.
+  </p>
+</div>
