@@ -64,6 +64,14 @@ app.get('/register', checkNotAuthenticated, (req, res) => {
   res.render('register');
 })
 
+app.get('/profile', checkAuthenticated, (req, res) => {
+  res.render('profile');
+})
+
+app.get('/friends', checkAuthenticated, (req, res) => {
+  res.render('friends');
+})
+
 app.post('/register', checkNotAuthenticated, (req, res) => {
   const errors = [];
 

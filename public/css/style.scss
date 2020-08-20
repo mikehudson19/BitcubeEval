@@ -170,7 +170,6 @@ body {
     background: white;
     border: none;
     font-family: 'News Cycle', sans-serif;
-    margin-top: 1rem;
     font-size: 1rem;
     width: 17.2rem;
     &:hover {
@@ -180,6 +179,20 @@ body {
     }
   }
 
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80vh;
+}
+
+.friends {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80vh;
 }
 
 .footer {

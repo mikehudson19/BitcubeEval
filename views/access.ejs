@@ -1,23 +1,14 @@
 <div class="access">
-  <h1 class="access__heading">Welcome, you are now logged in to your profile page, which is still under construction.</h1>
+  <h1 class="access__heading">Welcome, you are now logged in.</h1>
   <div class="access__group">
-  <p class="access__text">
-    While you're here, why not take a look at my portfolio?
-  </p>
-  
-  <a
-    class="access__link"
-    href="http://www.michaelhudsondev.com/"
-    target="_blank"
-    >My Portfolio</a
-  >
-</div>
-<div class="access__group">
-  <p class="access__text">
-    Alternatively, you can logout. But I'd like it if you stayed.
-  </p>
-  <form class="access__form" action="/logout?_method=DELETE" method="POST">
-    <button class="access__btn" type="submit">Logout</button>
-  </form>
-</div>
+    <a class="access__link" href="/profile">Profile</a>
+  </div>
+  <div class="access__group">
+    <a class="access__link" href="/friends">Friends</a>
+  </div>
+  <div class="access__group">
+    <form class="access__form" action="/logout?_method=DELETE" method="POST">
+      <button class="access__btn" type="submit">Logout</button>
+    </form>
+  </div>
 </div>
