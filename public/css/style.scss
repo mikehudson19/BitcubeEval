@@ -144,6 +144,9 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
+  &__heading {
+    margin: 0 4rem;
+  }
   &__group {
     display: flex;
     flex-direction: column;

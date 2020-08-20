@@ -221,6 +221,10 @@ body {
   text-align: center;
 }
 
+.access__heading {
+  margin: 0 4rem;
+}
+
 .access__group {
   display: -webkit-box;
   display: -ms-flexbox;
