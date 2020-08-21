@@ -1,0 +1,33 @@
+<section class="update">
+  <h1>Update your details</h1>
+  <form class="update__form" action="/update" method="POST">
+    <label for="firstName">First Name</label>
+    <input
+      class="update__input"
+      type="text"
+      id="firstName"
+      name="firstName"
+      placeholder="First Name"
+      value="<%=user.firstName%>"
+    />
+    <label for="firstName">Last Name</label>
+    <input
+      class="update__input"
+      type="text"
+      id="lastName"
+      name="lastName"
+      placeholder="Last Name"
+      value="<%= user.lastName %> "
+    />
+    <label for="firstName">Email</label>
+    <input
+      class="update__input"
+      type="email"
+      name="email"
+      id="email"
+      palceholder="Email"
+      value="<%= user.email %> "
+    />
+    <button class="update__btn" type="submit">Update</button>
+  </form>
+</section>

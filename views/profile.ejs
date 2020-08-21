@@ -1,3 +1,17 @@
 <section class="profile">
-<h1>Profile Page</h1>
+  <h1>Profile Page</h1>
+  <div class="profile__card">
+    <img class="profile__avatar" src="/images/user-avatar.png" alt="">
+    <div class="profile__text">
+      <p>Name: <%= user.firstName %> </p>
+      <p>Surname: <%= user.lastName %> </p>
+      <p>Email address: <%= user.email %> </p>
+    </div>
+    <div class="profile__buttons">
+      <a class="profile__btn" href="/update">Update your info</a>
+      <a class="profile__btn" href="/password">Change your password</a>
+      <a class="profile__btn" href="/friends">See your Friends</a>
+    </div>
+  </div>
+  
 </section>

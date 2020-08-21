@@ -282,6 +282,59 @@ body {
   height: 80vh;
 }
 
+.profile__card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 80%;
+      grid-template-columns: 20% 80%;
+  -ms-grid-rows: 85% 15%;
+      grid-template-rows: 85% 15%;
+  grid-column-gap: 2rem;
+}
+
+.profile__avatar {
+  width: 100%;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / span 1;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1 / span 2;
+}
+
+.profile__text {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / span 1;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / span 1;
+}
+
+.profile__buttons {
+  position: relative;
+  bottom: 0;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / span 1;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 / span 1;
+}
+
+.profile__btn {
+  background: white;
+  color: black;
+  text-decoration: none;
+  padding: 0.4rem;
+  margin-right: 0.5rem;
+}
+
+.profile__btn:hover {
+  background: #017201;
+  color: white;
+}
+
 .friends {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -294,6 +347,171 @@ body {
       -ms-flex-align: center;
           align-items: center;
   height: 80vh;
+}
+
+.password {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 80vh;
+}
+
+.password__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.password__input {
+  margin-bottom: 0.9rem;
+  border: none;
+  padding: 0.4rem;
+  width: 100%;
+}
+
+.password__btn {
+  padding: 0.75rem 0.3rem;
+  background: white;
+  border: none;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  letter-spacing: 1.3px;
+  width: 100%;
+}
+
+.password__btn:hover {
+  background: #017201;
+  color: white;
+  cursor: pointer;
+  border: 0.5px white solid;
+}
+
+.update {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 80vh;
+}
+
+.update__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.update__input {
+  margin-top: 0.3rem;
+  margin-bottom: 0.9rem;
+  border: none;
+  padding: 0.4rem;
+  width: 100%;
+}
+
+.update__btn {
+  padding: 0.75rem 0.3rem;
+  background: white;
+  border: none;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  letter-spacing: 1.3px;
+  width: 100%;
+}
+
+.update__btn:hover {
+  background: #017201;
+  color: white;
+  cursor: pointer;
+  border: 0.5px white solid;
+}
+
+.success {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80vh;
+}
+
+.success__btn {
+  background: white;
+  color: black;
+  text-decoration: none;
+  padding: 0.4rem;
+  font-size: 0.9rem;
+}
+
+.success__btn:hover {
+  background: #017201;
+  color: white;
+}
+
+.failure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80vh;
+}
+
+.failure__btn {
+  background: white;
+  color: black;
+  text-decoration: none;
+  padding: 0.4rem;
+  font-size: 0.9rem;
+}
+
+.failure__btn:hover {
+  background: #017201;
+  color: white;
 }
 
 .footer {

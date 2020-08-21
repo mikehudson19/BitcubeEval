@@ -178,7 +178,6 @@ body {
       cursor: pointer;
     }
   }
-
 }
 
 .profile {
@@ -186,6 +185,38 @@ body {
   flex-direction: column;
   align-items: center;
   height: 80vh;
+  &__card {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 85% 15%;
+    grid-column-gap: 2rem;
+  }
+  &__avatar {
+    width: 100%;
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 2;
+  }
+  &__text {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+  }
+  &__buttons {
+    position: relative;
+    bottom: 0;
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+  }
+  &__btn {
+    background: white;
+    color: black;
+    text-decoration: none;
+    padding: 0.4rem;
+    margin-right: 0.5rem;
+    &:hover {
+      background: rgb(1, 114, 1);
+      color: white;
+    }
+  }
 }
 
 .friends {
@@ -193,6 +224,114 @@ body {
   flex-direction: column;
   align-items: center;
   height: 80vh;
+}
+
+.password {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  &__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+  &__input {
+    margin-bottom: 0.9rem;
+    border: none;
+    padding: 0.4rem;
+    width: 100%;
+}
+&__btn {
+  padding: 0.75rem 0.3rem;
+  background: white;
+  border: none;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  letter-spacing: 1.3px;
+  width: 100%;
+  &:hover {
+    background: rgb(1, 114, 1);
+    color: white;
+    cursor: pointer;
+    border: 0.5px white solid;
+  }
+}
+}
+
+.update {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  &__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+  &__input {
+    margin-top: 0.3rem;
+    margin-bottom: 0.9rem;
+    border: none;
+    padding: 0.4rem;
+    width: 100%;
+}
+&__btn {
+  padding: 0.75rem 0.3rem;
+  background: white;
+  border: none;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  letter-spacing: 1.3px;
+  width: 100%;
+  &:hover {
+    background: rgb(1, 114, 1);
+    color: white;
+    cursor: pointer;
+    border: 0.5px white solid;
+  }
+}
+}
+
+.success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80vh;
+  &__btn {
+    background: white;
+    color: black;
+    text-decoration: none;
+    padding: 0.4rem;
+    font-size: 0.9rem;
+    &:hover {
+      background: rgb(1, 114, 1);
+      color: white;
+    }
+  }
+}
+
+.failure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80vh;
+  &__btn {
+    background: white;
+    color: black;
+    text-decoration: none;
+    padding: 0.4rem;
+    font-size: 0.9rem;
+    &:hover {
+      background: rgb(1, 114, 1);
+      color: white;
+    }
+  }
 }
 
 .footer {
