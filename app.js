@@ -58,6 +58,7 @@ app.get("/access", checkAuthenticated, (req, res) => {
 });
 
 app.get("/", (req, res) => {
+  console.log('working');
   res.render("home");
 });
 
@@ -68,7 +69,6 @@ app.get("/login", checkNotAuthenticated, (req, res) => {
 app.get("/register", checkNotAuthenticated, (req, res) => {
   res.render("register");
 });
-
 
 app.get("/update", checkAuthenticated, (req, res) => {
   const email = req.cookies.email;
@@ -169,7 +169,6 @@ app.post("/password", (req, res) => {});
 
 app.get("/profile", checkAuthenticated, (req, res) => {
   const email = req.cookies.email;
-
   
     User.findOne({ email: email })
     .then((user) => {
@@ -177,8 +176,6 @@ app.get("/profile", checkAuthenticated, (req, res) => {
     })
     .catch((err) => console.log(err));
 
-
- 
 });
 
 app.get("/friends", checkAuthenticated, (req, res) => {
